@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212529;
+  line-height: 1;
+}
+
+.carousel {
+  width: 800px;
+  margin: 100px auto;
+  background-color: #1c7ed6;
+  /* padding: 32px;
+  padding-left: 86px;
+  padding-right: 48px; */
+  padding: 32px 48px 32px 86px;
+  border-radius: 8px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 86px;
+}
+
+img {
+  height: 200px;
+  border-radius: 8px;
+  transform: scale(1.5);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.testimonial-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: white;
+}
+.testimonial-author {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #a5d8ff;
+}
+.testimonial-job {
+  font-size: 12px;
+  color: #a5d8ff;
+}
+
+/* Button Controls */
+.btn {
+  background-color: white;
+  border: none;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.btn-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #1c7ed6;
+}
+
+.btn--left {
+  /* In relation to PARENT ELEMENT */
+  top: 50%;
+  left: 0;
+
+  /* In Relation to ELEMENT ITSELF */
+  transform: translate(-50%, -50%);
+}
+.btn--right {
+  top: 50%;
+  right: 0;
+  /* In Relation to ELEMENT ITSELF */
+  transform: translate(50%, -50%);
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 32px);
+
+  display: flex;
+  gap: 12px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border: 2px solid #1c7ed6;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot--fill {
+  background-color: #1c7ed6;
+}

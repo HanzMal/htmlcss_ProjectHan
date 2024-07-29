@@ -1,0 +1,59 @@
+/* Body */
+Body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.card-img {
+  width: 400px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-img:hover img {
+  transform: scale(1.05);
+}
+
+/* Membuat caption absolute terhadap parent .card-img. z-index 1 berarti posisinya ada diatas img*/
+.card-img .caption {
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(206, 0, 0, 0.048);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  transition: all 600ms ease-in-out;
+}
+
+.card-img:hover .caption {
+  opacity: 1;
+}
+
+img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  transition: all 600ms ease-in-out;
+  object-fit: cover;
+}
+
+/* Membuat gallery dengan grid */
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+}
